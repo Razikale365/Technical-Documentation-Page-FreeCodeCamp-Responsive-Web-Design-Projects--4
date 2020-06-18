@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Technical Documentation Project FCC</title>
+  </head>
+  <style>
+    @media (max-width: 800px) {}
+  </style>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <nav id="navbar">
+      <header> Technical Documentation</header>
+      <a href="#Introduction" class="nav-link">Introduction</a>
+      <a href="#JavaScript" class="nav-link">JavaScript</a>
+      <a href="#Variables" class="nav-link">Variables</a>
+      <a href="#Scope" class="nav-link">Scope</a>
+      <a href="#Functions" class="nav-link">Functions</a>
+    </nav>
+    <div class="main">
+
+     <main id="main-doc">
+
+      <section class="main-section" id="Introduction">
+         <header>Introduction</header>
+        <ul>
+          <li>Introduction</li>
+          <li>JavaScript</li>
+          <li>Variables</li>
+          <li>Scope</li>
+          <li>Functions</li>
+        </ul>
+         <p>JavaScript is the programming language of HTML and the Web.</p>
+         <p>JavaScript is easy to learn.</p>
+         <code> Example Code:<br>
+    var x, y, z;  // Declare 3 variables<br>
+    x = 5;    // Assign the value 5 to x<br>
+    y = 6;    // Assign the value 6 to y<br>
+    z = x + y;  // Assign the sum of x and y to z<br>
+
+    document.getElementById("demo").innerHTML =
+    "The value of z is " + z + ".";<br>
+    </code>
+      </section>
+
+      <section class="main-section" id="JavaScript">  <header>JavaScript</header>
+
+         <p>Did You Know?
+    JavaScript and Java are completely different languages, both in concept and design.
+
+    </p>
+         <p>JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
+    ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.</p>
+         <code> A simple pop code would be:
+           window.alert(5 + 6);</code>
+      </section>
+      <section class="main-section" id="Variables">
+
+          <header>Variables</header>
+        <p>JavaScript variables are containers for storing data values.
+
+    In this example, x, y, and z, are variables:</p>
+
+         <code>var x = 5;<br>
+    var y = 6;<br>
+    var z = x + y;<br></code>
+        <p>
+          From the example above, you can expect:
+    <ul><li>
+      x stores the value 5.
+
+      </li>
+    <li>
+      y stores the value 6.
+
+      </li>
+
+    <li>
+       z stores the value 11.
+      </li></ul>
+        </p>
+      </section>
+
+      <section class="main-section" id="Scope">
+          <header>Scope</header>
+       <p>JavaScript has function scope: Each function creates a new scope.
+
+    Scope determines the accessibility (visibility) of these variables.
+
+    Variables defined inside a function are not accessible (visible) from outside the function.</p>
+        <p>Scope determines the accessibility of variables, objects, and functions from different parts of the code.</p>
+         <code>// code here can NOT use carName
+
+    function myFunction() {<br>
+      var carName = "Volvo";<br>
+
+      // code here CAN use carName<br>
+    }</code>
+      </section>
+
+      <section class="main-section" id="Functions">
+          <header>Functions</header>
+          <p> JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+
+    Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
+
+    The parentheses may include parameter names separated by commas:
+    (parameter1, parameter2, ...)
+
+    The code to be executed, by the function, is placed inside curly brackets: {}</p>
+        <p>Function parameters are listed inside the parentheses () in the function definition.
+
+    Function arguments are the values received by the function when it is invoked.
+
+    Inside the function, the arguments (the parameters) behave as local variables.</p>
+        <code>function myFunction(p1, p2) {
+      return p1 * p2;   // The function returns the product of p1 and p2
+    }</code>
+      </section>
+      <footer>
+        All Information comes from <a href="https://www.w3schools.com/">w3schools</a>.
+      </footer>
+    </main>
+
+    </div>
+
+  </body>
+  <!-- bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- freecodecamp scritps -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
